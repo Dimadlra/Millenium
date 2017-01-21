@@ -1,0 +1,603 @@
+
+
+a, .link {
+    color: #e14e4e;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section.grey {
+    background: #f9f9fa;
+    border-bottom: 1px solid #e3e3e3;
+    border-top: 1px solid #e3e3e3;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+#leader h1 {
+    margin: 60px auto 20px;
+    width: 80%;
+    line-height: 1.3em;
+    font-weight: 400;
+    border: 0;
+    vertical-align: baseline;
+    color: #fff;
+}
+
+.absolute-center {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-transition: -webkit-transform 600ms ease;
+    transition: transform 600ms ease;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.VideoBackground__section {
+    background-color: rgb(66, 66, 66);
+    background-position: -330px center;
+}
+
+.VideoBackground__wrapper {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.VideoBackground__video {
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
+    height: auto;
+    left: 50%;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.VideoBackground__video-playing {
+    -webkit-transition: opacity 500ms ease;
+    transition: opacity 500ms ease;
+    opacity: 1;
+}
+
+.VideoBackground__content {
+    position: relative;
+    z-index: 2;
+    height: 100vh
+}
+
+.OutOfMarketHome__section-one-content {
+    height: 95%;
+    left: 10%;
+    position: relative;
+    top: 5%;
+    color: #FFFFFF;
+}
+
+.OutOfMarketHome__shift-logo {
+    height: 30px;
+    position: relative;
+    width: 99px;
+}
+
+.OutOfMarketHome__headline {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+    left: 0;
+    line-height: 40px;
+    margin-bottom: 35px;
+    position: relative;
+    text-align: left;
+    top: 10%;
+}
+
+.ShortDividerLine__root {
+    width: 80px;
+    margin: 0 auto;
+    border-top: 1px solid #a6a6a6;
+    padding-bottom: 80px;
+}
+
+.OutOfMarketHome__short-divider {
+    border-top: 2px solid #e14e4e;
+    margin: 0 0 0 5px;
+    position: relative;
+    text-align: left;
+    top: 12%;
+}
+
+.OutOfMarketHome__region-list {
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    height: 153px;
+    text-align: left;
+}
+
+.OutOfMarketHome__region-list-item {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    margin-right: 15px;
+    width: 240px;
+}
+
+.OutOfMarketHome__region-list-card-name {
+    margin: 0 12px;
+}
+
+.OutOfMarketHome__region-list-headline {
+    margin-bottom: 35px;
+    padding: 0;
+}
+
+.OutOfMarketHome__region-container {
+    position: relative;
+    top: 5%;
+}
+
+.OutOfMarketHome__region-list-card {
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    padding: 17px 0;
+}
+
+.OutOfMarketHome__section-one-footer {
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    bottom: 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: absolute;
+    width: 100%;
+}
+
+.CarDiagram__container {
+    -webkit-transform: scale(.7);
+    transform: scale(.7);
+}
+
+.CarDiagram__content {
+    /*max-width: 530px;*/
+    /*min-width: 530px;*/
+    /*height: 344px;*/
+    position: relative;
+    text-align: center;
+}
+
+.CarDiagram__car {
+    /*bottom: 0;*/
+    /*left: 50%;*/
+    /*position: absolute;*/
+    /*width: 313px;*/
+    /*-webkit-transform: translateX(-50%);*/
+    /*transform: translateX(-50%);*/
+}
+
+.CarDiagram__line-visible {
+
+}
+
+.CarDiagram__line[src="/img/car_diagram/line_brakes@2x.png"] {
+    left: 0;
+    top: 250px;
+    width: 113px;
+}
+
+.CarDiagram__line[src="/img/car_diagram/line_cooling@2x.png"] {
+    left: 290px;
+    top: 220px;
+    width: 240px;
+}
+
+.CarDiagram__line[src="/img/car_diagram/line_dashboard@2x.png"] {
+    left: 250px;
+    top: 7px;
+    width: 91px;
+}
+
+.CarDiagram__line[src="/img/car_diagram/line_electrical@2x.png"] {
+    left: 372px;
+    top: 64px;
+    width: 140px;
+}
+
+.CarDiagram__line[src="/img/car_diagram/line_engine@2x.png"] {
+    left: 28px;
+    top: 60px;
+    width: 214px;
+}
+
+.scroll-trigger {
+    position: relative;
+    z-index: 201;
+}
+
+.content-width {
+    max-width: 1140px;
+    min-width: 260px;
+    margin: 0 auto;
+}
+
+.short-divider-line {
+    width: 80px;
+    margin: 0 auto;
+    border-top: 1px solid #424242;
+    padding-bottom: 80px;
+}
+
+.video-block {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.about-block {
+    padding-top: 110px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 110px;
+}
+
+.about-text {
+    text-align: center;
+    margin: 0 auto 60px;
+    width: 80%;
+    max-width: 700px;
+}
+
+.absolute-title {
+    margin: 60px auto 20px;
+    width: 80%;
+    line-height: 1.3em;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+}
+
+.leader-icon {
+    background-image: url(../imgs/about.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.center_millenium {
+    padding: 60px;
+}
+
+.finance-grey {
+    background-color: #F7F7F8;
+}
+
+.finance_main {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.finance_secondary {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.finance_main .container {
+    padding: 200px 0 80px;
+}
+
+.finance_secondary .container {
+    padding: 50px 0 80px;
+}
+.finance-top{
+    margin-top: 100px;
+}
+.finance-block {
+    margin-top: 10px;
+}
+.finance-info-text{
+    line-height: 1.5;
+    margin-top: 30px;
+    font-family: 'Gotham Narrow SSm A','Gotham Narrow SSm B',Helvetica Neue,Helvetica,Arial;
+    font-style: normal;
+    padding: 0 0 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #424242;
+}
+.finance-link{
+    color: #e14e4e;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+.finance-block h1 {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: -8px;
+    text-align: left;
+}
+
+.finance-block h2 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 20px 0 30px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.finance-block p {
+    line-height: 2;
+    margin-top: 30px;
+    font-weight: 300;
+    font-family: 'Gotham Narrow SSm A','Gotham Narrow SSm B',Helvetica Neue,Helvetica,Arial;
+    font-style: normal;
+
+}
+
+.finance-block li {
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.finance-block .row.center {
+    padding-top: 30px;
+}
+
+.finance-block .ShortDividerLine__root {
+    width: 80px;
+    padding: 0;
+    margin: 30px 0;
+    border-top: 3px solid #e14e4e;
+}
+
+.finance_img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 66px;
+    margin: 0 auto;
+    width: 101px;
+}
+
+.logo_here {
+    background-image: url(../imgs/logo_here.png);
+    float: left;
+    height: 50px;
+}
+
+.credit {
+    background-image: url(../imgs/info_credit_score.png);
+}
+.application {
+    background-image: url(../imgs/info_application.png);
+}
+.financing {
+    background-image: url(../imgs/info_financed.png);
+}
+
+.autoplay {
+    background-image: url(../imgs/info_lender_autopay.png);
+    width: 100%;
+}
+.autofi {
+    background-image: url(../imgs/info_lender_autofi.png);
+    width: 100%;
+}
+.firsttech {
+    background-image: url(../imgs/info_lender_firsttech.png);
+    width: 100%;
+}
+.shift_finance {
+    background-image: url(../imgs/shift_finance.png);
+    width: 100%;
+}
+
+.finance-question {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.finance-faq-list{
+    padding-left: 20px;
+}
+.finance-answer {
+
+}
+
+.about .millenium_navbar {
+    background: rgba(0,0,0,.7);
+    color: #FFFFFF;
+}
+
+.about .navbar_el:hover {
+    border-bottom: solid 2px #F7F7F8;
+}
+
+.millenium_navbar {
+    background: rgba(255,255,255,.7);
+    height: 50px;
+    left: 0;
+    padding: 0 30px;
+    position: fixed;
+    top: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    width: 100%;
+    z-index: 500;
+    line-height: 50px;
+}
+
+.navbar_el {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.navbar_el:hover {
+    border-bottom: solid 2px #4D4D4D;
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+.millenium_logo_text {
+    background-image: url(../imgs/millenium_logo_text.png);
+    width: 100%;
+}
+
+.millenium_logo_icon {
+    background-image: url(../imgs/millenium_logo_icon.png);
+    width: 100%;
+}
+
+.home-grey {
+    background-color: #FBFDFC;
+}
+
+.location-item {
+    height: 300px;
+    border: 1px solid #D4D4D4;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.small_header {
+    font-family: 'Gotham Narrow SSm A','Gotham Narrow SSm B',Helvetica Neue,Helvetica,Arial;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.btn-send {
+    width: 180px;
+    border: 1px solid #e14e4e;
+    color: #e14e4e;
+    background-color: #ffffff;
+}
+
+.btn-send:hover {
+    color: #fff;
+    background-color: #d9534f;
+}
+
+.home_input {
+    height: 50px;
+    margin-top: 5px;
+}
+
+.millenium_image {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.car_block {
+    background-color: #ffffff;
+    height: 200px;
+    margin-top: 15px;
+    padding: 10px;
+}
+
+.car_name {
+    border: 1px solid #D4D4D4;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn_send{
+    padding: 20px 50px;
+    background: 0 0;
+    border: 1px solid #e14e4e;
+    color: #e14e4e;
+    font-family: 'Gotham Narrow SSm A','Gotham Narrow SSm B',Helvetica Neue,Helvetica,Arial;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+}
+.btn_send_size{
+    height: 60px;
+    margin: 60px auto 90px;
+    width: 250px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.btn_content{
+    display: block;
+    min-height: 20px;
+}
+.btn_send:hover{
+    background-color: #e14e4e;
+    color: white;
+}
+.home_paragraph_text{
+    font-family: 'Gotham Narrow SSm A','Gotham Narrow SSm B',Helvetica Neue,Helvetica,Arial;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 0;
+    color: #424242;
+}
+.home_paragraph{
+    margin-top: 115px;
+    margin-bottom: 115px;
+    width: 50%;
+    margin: 0 5% 0 10%;
+}
+.header_home{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    color: #424242;
+}
+.location_headline{
+    font-size: 26px;
+    font-weight: 300;
+    margin: 80px 0 15px;
+    font-family: 'Gotham Narrow SSm A','Gotham Narrow SSm B',Helvetica Neue,Helvetica,Arial;
+    font-style: normal;
+    color: #424242;
+}
+.sell-car-assistance{
+    margin-top: 40px;
+    font-size: 100%;
+}

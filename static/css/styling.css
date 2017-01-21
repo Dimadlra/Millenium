@@ -1,0 +1,1447 @@
+@font-face{
+	font-family: 'Courgette';
+	src: url(fonts/Courgette-Regular.ttf);
+}
+body{font-size: 16px;}
+.white_txt{color: white !important;}
+.gblack{color: #424242;}
+.red_txt{color: #e14e4e;}
+.gray_txt{color: #9b9b9b;}
+.notice_bar{
+	background-color: #e14e4e;
+	padding: 20px 30px;
+	height: 65px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right :0;
+	z-index: 500;
+	display: none;
+}
+.notification1{
+	text-align: center;
+	display: inline-block;
+	width: calc( 100% - 30px );
+}
+.close_btn{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	background-image: url('../imgs/headers/close_white@2x.2zETBYzl.png');
+	background-size: 100% 100%;
+	vertical-align: middle;
+}	
+.white_header{
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	z-index: 500;
+	top: 65px;
+	padding: 30px;
+	background-color: #424242;
+}
+.white_header .selecting_city{
+	margin-top: 0;
+}
+#header{
+	width: 100%;
+}
+.standard-logo img{
+	height: 30px;
+}
+.logo{
+	width: 100px;
+	height: 30px;
+	background: url('../imgs/epoxy/millenium_logo.png') no-repeat top left;
+	background-size: 100% auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+.selecting_more{
+	background-image: url('../imgs/headers/arrow_white_down@2x.1k0EDd82.png');
+	background-position: right 20px;
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	margin-top: 22px;
+}
+.selecting_city{
+	background-image: url('../imgs/headers/arrow_white_down@2x.1k0EDd82.png');
+	background-position: right 20px;
+	background-size: 15px 15px;
+	background-repeat: no-repeat;
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	margin-top: 13px;
+}
+.selecting_city ul, .price_scope ul, .warranty_sel ul, .financing_sel ul, .selecting_more ul{
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid #e3e3e3;
+	display: none;
+	box-shadow: 1px 1px 10px 0 rgba(66, 66, 66, .1);
+	position: absolute;
+	z-index: 150;
+	padding: 10px;
+}
+.selecting_city ul, .selecting_more ul{
+	height: 300px;
+	padding: 10px;
+}
+.price_scope ul{
+	height: 200px;
+	padding: 15px;
+	right: 10px;
+	width: 140px;
+	text-align: left;
+}
+.selecting_city p{
+	vertical-align: middle;
+	text-align: right;
+	transition: all 0.2s ease;
+	outline: none;
+	width: 150px;
+	padding-top: 17px;
+	padding-right: 23px;
+	font-size: 15px;
+	cursor: pointer;
+}
+.selecting_more p{
+    display: block;
+    line-height: 15px;
+    padding: 20px 10px 3px 3px;
+    margin: 0 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+.test{
+	margin-top: -22px;
+	margin-right: 5px;
+}
+#hmyc li, .selecting_city li, .accordion_menu li, .price_scope li, .section_d3 li, .red_socials li, .warranty_sel li, .financing_sel li, footer li, .mobile_navigation li, .selecting_more li{
+	list-style: none;
+}
+#menu_list{
+	background-color: white;
+}
+.selecting_city li a, .price_scope li a, .warranty_sel li a, .financing_sel li a, .selecting_more li a{
+	padding-right: 25px;
+	color: #424242;
+	line-height: 45px;
+}
+.selecting_more li a:hover, .selecting_city li a:hover, .price_scope li a:hover, .warranty_sel li a:hover, .financing_sel li a:hover, footer li a:hover{
+	text-decoration: none;
+}
+.selecting_more li:hover ,.selecting_city li:hover, .price_scope li:hover, .cactive{
+ 	background-image: url('../imgs/headers/check-icon.39YqUSza.png');
+ 	background-size: 15px 11px;
+ 	background-repeat: no-repeat;
+ 	background-position: right;
+ 	color: #e14e4e;
+}
+li.cactive a{
+	color: #e14e4e !important;
+}
+.page-content{
+	position: relative;
+	margin-top: -160px;
+}
+.page-content.with_whiteheader{
+	margin-top: 0;
+}
+.section_1{
+	background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url('../imgs/headers/leader_temp.2FvlGSMd.jpg') 150% no-repeat;
+}
+.section_1, .section_s1{
+	min-height: 700px;
+	position: relative;
+	text-align: center;
+	padding: 55px 0 0;
+	background-position: center top;
+	background-size: cover;
+	background-color: #9b9b9b;
+	margin-top: 60px;
+	display: block;
+}
+.navigation{
+	position: absolute;
+	right: 30px;
+	transition: inherit;
+	display: inline-block;
+}
+.navigation li{
+	position: relative;
+	top: 2px;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0 15px;
+	padding-top: 17px;
+}
+/*.navigation li a.wactive, .navigation li a:hover{
+	border-bottom: 2px solid #e3e3e3;
+	text-decoration: none;
+	color: white;
+	padding-bottom: 3px;
+}*/
+#primary-menu img{
+	width:20px;
+}
+.favorite img{
+	width: 19px;
+}
+.section_1 h1{
+	font-size: 50px;
+	padding-top: 200px;
+}
+.section_1 h1 span, .red_line_area{
+	display: inline-block;
+}
+.section_1 p{
+	font-size: 18px;
+}
+.b_white_txt{
+	opacity: 0.7;
+}
+.red_line_area{
+	position: relative;
+}
+.red_line{
+	border-top: 5px solid #e14e4e;
+	position: absolute;
+	top: 29px;
+	transform: rotate(-5deg);
+	width: 100%;
+	z-index: 100;
+}
+.select2-container--default .select2-search--inline .select2-search__field{
+	height: 35px;
+}
+.select2-selection__rendered{
+	padding-left: 30px !important;
+	background-image: url('../imgs/headers/magnifyingglass.ctfpjkLO.png');
+	background-size: 20px;
+	background-repeat: no-repeat;
+	background-position: 5px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice{
+	padding: 2px 5px;
+	margin-top: 10px;
+	background-color: #fff !important;
+}
+.select2-container--default.select2-container--focus .select2-selection--multiple{
+	border: 1px solid #ccc !important;
+}
+.select2-container--default .select2-selection--multiple{
+	border: 1px solid #fff !important;
+}
+.red_btn{
+	background: #e14e4e;
+	color: white;
+	height: 47px;
+	padding: 11px 20px;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+.section_2{
+	padding: 30px 0;
+	background-color: #f9f9fa;
+	display: block;
+}
+.sel_title span{
+	display: inline-block;
+	margin: 20px;
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+.sel_title span.ractive, .sel_title span:hover{
+	border-bottom: 3px solid #e14e4e;
+}
+.buy_acar{
+	max-width: 1110px;
+	margin: 0 auto;
+	min-height: 400px;
+}
+.buy_acar img{
+	max-width: 150px;
+	height: 70px;
+}
+.buy_acar .col-sm-4{
+	padding: 0 40px;
+}
+.large_btn{
+	padding-top: 22px;
+	padding-bottom: 22px;
+	font-size: 16px;
+	height: 65px;
+}
+.left-sidebar{
+	width: 250px;
+	padding: 40px 20px;
+	border-right: 1px solid #e3e3e3;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	float: left;
+	z-index: 101;
+	background-color: white;
+}
+.left_fixed_area{
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: calc( 100% - 50px );
+}
+.topbar{
+	width: calc( 100% - 250px );
+	margin-left: 250px;
+	min-height: 60px;
+	padding: 7px 0;
+	background-color: white;
+	z-index: 101;
+}
+.left-sidebar .price, .left-sidebar .mil, .left-sidebar .accordion_menu{
+	padding: 0 10px;
+}
+.price_value, .mil_value{
+	font-size: 20px;
+}
+.accordion_menu p, .selecting_city p, .close_btn, .price_scope p, .kind_value, .financing_sel p, .filter, .sel_title span{
+	cursor: pointer;
+}
+.accordion_menu ul{
+	display: none;
+	padding: 0;
+}
+.accordion_menu ul li{
+	line-height: 40px;
+	background-color: #f7f7f8;
+	border-bottom: 1px solid #ebebeb;
+}
+.accordion_menu ul li a{
+	color: #424242;
+	align-items: center;
+	padding: 13px 13px 13px 24px;
+	text-decoration: none !important;
+}
+.accordion_menu ul li a:hover{
+	color: black;
+}
+.section_3{
+	/*height: calc( 100vh - 100px );*/
+}
+.left-sidebar .red_btn{
+	position: absolute;
+	bottom: 20px;
+	width: calc( 100% - 40px );
+}
+.price_scope{
+	text-align: right;
+}
+.price_scope p, .kind_value, .warranty_sel p, .financing_sel p{
+	background-image: url('../imgs/headers/arrow_black_down@2x.kjb8Drre.png');
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: 15px;
+	padding-right: 25px;
+	margin: 15px 0;
+}
+.carinfo{
+	padding: 15px 20px 30px 20px;
+}
+.car{
+	position: relative;
+	padding: 0;
+	border-right: 1px solid #e3e3e3;
+	transition: 0.3s all ease-in-out;
+}
+.favorite2{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 40px;
+	width: 40px;
+	background-image: url('../imgs/headers/icon_favorite_light.Ew5Ly9WE.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
+.favorite2:hover{
+	background-image: url('../imgs/headers/icon_favorite_red_border.rQ2eXwq5.png');
+}
+.gird_content{
+	width: calc( 100% - 250px );
+	margin-left: 250px;
+}
+.gird_content img, .car_preview img{
+	width: 100%;
+}
+a{
+	text-decoration: none;
+}
+.car:hover{
+	-ms-transform: scale(1.1, 1.1); 
+    -webkit-transform: scale(1.1, 1.1); 
+    transform: scale(1.1, 1.1);
+    box-shadow: 1px 1px 10px 0 rgba(66, 66, 66, .1);
+    z-index: 100;
+    transition: 0.3s all ease-in-out;
+}
+.carinfo{
+	color: #424242;
+	background-color: white;
+}
+.caryear{
+	font-size: 12px;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+	padding: 2px 4px;
+	margin-right: 10px;
+}
+.carprice{
+	position: absolute;
+	right: 20px;
+}
+.carprice .pricenum{
+	font-size: 20px;
+	margin-left: 10px;
+}
+.carprice .dol{
+	position: absolute;
+	bottom: 7px;
+}
+.mileague{
+	color: #9b9b9b;
+}
+.mail_area{
+	padding: 100px 0;
+}
+.mail_desc{
+	background-image: url('../imgs/headers/small-gray-envelope@2x.3XLVfCky.png');
+	background-position: left;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	padding-left: 25px;
+}
+.mail_desc, .mail_area, .call_phone, .section_d7 h2{
+	text-align: center;
+}
+.select_ranges, .section_d6>div{
+	max-width: 700px;
+	text-align: left;
+	margin: auto;
+}
+.kind_value{
+	padding-bottom: 10px;
+	background-size: 15px;
+	background-image: url('../imgs/headers/arrow_black_down@2x.kjb8Drre.png');
+	font-size: 15px;
+}
+.white_header{
+	height: 50px;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 0 30px;
+	width: calc( 100% - 200px );
+}
+.logo_detail{
+	width: 70px;
+	background: url('../imgs/millenium_logo_text.png') no-repeat top left;
+}
+.white_header .navigation li a.wactive, .white_header .navigation li a:hover{
+	color: #424242;
+	border-bottom: 2px solid #424242;
+}
+.white_header .navigation li{
+	padding-top: 12px;
+}
+.white_header .selecting_city{
+	background-image: url('../imgs/headers/arrow_black_down@2x.kjb8Drre.png');
+}
+.right-sidebar{
+	width: 200px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	border-left: 1px solid #e3e3e3;
+	height: 100vh;
+	
+}
+.tab_title{
+	padding-top: 15px;
+	padding-bottom: 14px;
+	width: 200px;
+	position: fixed;
+	top: 0;
+	background-color: white;;
+	vertical-align: middle;
+	text-align: center;
+}
+.car_preview{
+	position: relative;
+	margin-top: 50px;
+	overflow-y: scroll;
+	height: calc( 100% - 50px );
+}
+.car_preview .carinfo{
+	padding: 10px;
+}
+.cars>a{
+	opacity: 0.7;
+}
+.cars>a:hover{
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+.car_slider{
+	background-image: url('../imgs/headers/car_detail.jpg');
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: auto 100%;
+	padding: 100px 0 0 0;
+	position: absolute;
+}
+.detail_page{
+	width: calc( 100% - 200px );
+	font-size: 17px;
+}
+.viewnum{
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+	padding: 10px 10px 10px 40px;
+	background-image: url('../imgs/headers/icon_interest.3INxtKcA.png');
+	background-size: 27px;
+	background-position: 7px;
+	background-repeat: no-repeat;
+	margin-left: 30px;
+}
+.ddash{
+	text-align: center;
+	margin-top: -20px;
+}
+.ddash>span{
+	border: 1px solid #e3e3e3;
+	border-radius: 30px;
+	padding: 10px 0 !important;
+	font-size: 13px;
+}
+.ddash span:first-child{
+	border-right: 1px solid #e3e3e3;
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	padding: 10px 35px;
+}
+.ddash span:nth-child(2){
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	padding: 10px 35px;
+}
+.dactive{
+	color: #999;
+	background-color: #f3f3f3;
+}
+.section_d1{
+	position: relative;
+	height: 100vh;
+}
+.car_detailinfo{
+	position: absolute;
+	bottom: 50px;
+	z-index: 100;
+}
+.car_detailinfo h3{
+	margin-top: 5px;
+}
+.gradient_background{
+	position: absolute;
+	background: linear-gradient(transparent, rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+	height: 100vh;
+	width: 100%;
+
+}
+.car_detailinfo .car_title{
+	border-right: 1px solid #e3e3e3;
+}
+.car_detailinfo .carprice{
+	right: auto;
+	position: relative;
+}
+.car_detailinfo .pricenum, .save_price .pricenum{
+	font-size: 30px;
+	margin-left: 12px;
+}
+.car_detailinfo .carprice .dol{
+	font-size: 20px;
+	bottom: 12px;
+}
+.monthly_fee{
+	font-size: 20px;
+	position: relative;
+}
+.monthly_fee .dol{
+	font-size: 13px;
+	position: absolute;
+	bottom: 7px;
+}
+.feenum{
+	margin-left: 10px;
+}
+.ref{
+	position: absolute;
+	bottom: 11px;
+	font-size: 20px;
+	margin-left: 3px;
+}
+.favorite3{
+	background-image: url('../imgs/headers/icon_favorite_red_border.rQ2eXwq5.png');
+	background-position: center;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	border: 1px solid #e14e4e;
+	width: 65px;
+	height: 65px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0;
+	margin-right: 5px;
+}
+.car_detailinfo .large_btn{
+	display: inline-block;
+	padding: 22px 50px;
+}
+.section_d2, .section_d3{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #f7f7f8;
+}
+.section_d2{
+	min-height: 450px;
+}
+.section_d3{
+	min-height: 675px;
+}
+.save_price>div:first-child{
+	padding-right: 30px;
+	margin-right: -5px;
+}
+.save_price .carprice{
+	position: relative;
+	right: auto;
+}
+.save_price .carprice .dol{
+	bottom: 14px;
+}
+.section_d2 .col-sm-8{
+	line-height: 30px;
+	margin-top: 50px;
+}
+.save_price{
+	margin-bottom: 30px;
+}
+.save_price_desc{
+	margin-bottom: 50px;
+}
+.save_price_desc p, .red_socials li, .white_socials li{
+	background-size: 30px;
+	background-repeat: no-repeat;
+	background-position: left;
+	padding-left: 40px;
+	margin-bottom: 20px;
+}
+.save_price_desc p:first-child{
+	background-image: url('../imgs/headers/icon_carfax@2x.2ruRa-3t.png');
+}
+.save_price_desc p:nth-child(2){
+	background-image: url('../imgs/headers/icon_inspection@2x.1KrLKSG4.png');
+}
+.save_price_desc p:nth-child(3){
+	background-image: url('../imgs/headers/icon_warranty@2x.q9goNGwL.png');
+}
+.save_price_desc p:nth-child(4){
+	background-image: url('../imgs/headers/icon_finance@2x.1Vj4Mjc_.png');
+}
+.detail_field p{
+	font-size: 15px;
+	font-weight: 600;
+	color: #424242;
+	line-height: 1.35;
+}
+.certified_img{
+	width: 250px;
+}
+.section_d4{
+	height: 950px;
+}
+.section_d4 .col-md-8{
+	padding: 35px;
+	height: 850px;
+}
+.section_d4 .col-md-4{
+	padding: 35px 35px 35px 0;
+	height: 850px;
+}
+.section_d4 .inner_area{
+	background-color: #f9f9fa;
+	border: 1px solid #e3e3e3;
+	border-radius: 8px;
+	padding: 20px;
+}
+.inner_area>div{
+	background-color: white;
+	border-radius: 8px;
+	border: 1px solid #e3e3e3;
+	padding: 76px  15%;
+}
+.question_area{
+	border-radius: 8px;
+	padding: 20px;
+	border: 1px solid #e3e3e3;
+	height: 100%;
+}
+.question_area textarea, .question_area input{
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	width: 100%;
+	line-height: 60px;
+}
+.question_area textarea{
+	line-height: 30px;
+}
+.white_btn{
+	border: 1px solid #e14e4e;
+	border-radius: 5px;
+	color: #e14e4e;
+	padding: 20px 40px;
+	background-color: white;
+}
+.white_btn:hover{
+	background-color: #e14e4e;
+	color: white;
+}
+.question_area .white_btn{
+	line-height: 20px !important;
+	border: 1px solid #e14e4e !important;
+	width: 50%;
+	margin: 0 25%;
+}
+.red_socials li{
+	display: inline-block;
+	margin-right: 70px;
+}
+.red_socials .facebook{
+	background-image: url('../imgs/headers/icon_facebook@2x.2P9uBxnx.png');
+}
+.red_socials .twitter{
+	background-image: url('../imgs/headers/icon_twitter@2x.36aDnod0.png');
+}
+.red_socials .email_note{
+	background-image: url('../imgs/headers/icon_mail@2x.3_x4SFY-.png');
+}
+.section_d5{
+	position: relative;
+	z-index: 50;
+}
+.fixed_title{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	background: rgba(255,255,255,0.9);
+	padding: 20px;
+}
+.fixed_title img{
+	width: 20px;
+}
+.map, #googleMap{
+	height: 600px;
+	background-color: #e3e3e3;
+}
+.destination{
+	padding: 50px 0;
+	background-color: white;
+}
+.destination input{
+	background-image: url('../imgs/headers/icon_location@2x.374ThCbu.png');
+	background-size: 30px;
+	background-position: right;
+	background-repeat: no-repeat;
+	line-height: 50px;
+}
+.section_d6 input, .chkbox{
+	width: 70%;
+	margin: 10px 15%;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+}
+.section_d6{
+	margin-top: -300px;
+	z-index: 80;
+	position: relative;
+	margin-bottom: 50px;
+}
+.section_d6>div{
+	border: 1px solid #e3e3e3;
+}
+.inputhalf{
+	width: 33% !important;
+	float: left;
+}
+.inputhalf:first-child{
+	margin: 10px 2% 10px 15%;
+}
+.inputhalf:nth-child(2){
+	margin: 10px 15% 10px 2%;
+}
+.bookingform{
+	background-color: #f9f9fa;
+	padding: 30px 0;
+}
+.bookingform .red_btn{
+	border: 0;
+}
+.bookingform input:not(.red_btn){
+	background-color: #f9f9fa;
+	line-height: 50px;
+}
+.chkbox{
+	border-bottom: 0 !important;
+	text-align: center;
+}
+.chkbox input, .chkbox span, .financing_sel, .save_price>div{
+	display: inline-block;
+}
+.section_d6 .chkbox input{
+	width: 20px !important;
+	margin: 0;
+}
+.sec_container{
+	padding: 30px;
+}
+.warranty_sel li a:hover, .financing_sel li a:hover{
+	color: #e14e4e;
+}
+.selactive a{
+	color: #e14e4e !important;
+}
+.warranty_sel p{
+	border: 1px solid #e3e3e3;
+	padding: 10px;
+	background-position: calc( 100% - 10px ) center;
+}
+.financing_field{
+	line-height: 54px;
+}
+.financing_sel, .monthpay .pos_absol{
+	right: 5px;
+}
+.financing_sel ul{
+	width: 130%;
+	padding: 10px;
+}
+.pos_absol{
+	position: absolute;
+}
+.pos_relat{
+	position: relative;
+}
+#downpayment{
+	margin-top: 10px;
+	width: 100px;
+}
+.border_top{
+	border-top: 1px solid #e3e3e3;
+}
+.border_bottom{
+	border-bottom: 1px solid #e3e3e3;
+}
+.service img{
+	width: 15px;
+}
+.black_line{
+	border-bottom: 2px solid #424242;
+}
+.section_d7{
+	height: 800px;
+}
+.section_d7 .col-sm-8{
+	padding-right: 50px;
+}
+.monthpay{
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+}
+.monthpay .pos_absol.red_txt{
+	right: 0;
+}
+.monthpay p{
+	margin-bottom: 20px;
+}
+.small_font{
+	font-size: 15px;
+	line-height: 25px;
+}
+.help{
+	border: 1px solid #e3e3e3;
+	background-color: #f2f2f2;
+	width: 90%;
+	height: 180px;
+	margin-top: 60px;
+	padding: 30px;
+}
+.help .white_btn{
+	border: 2px solid #e14e4e;
+}
+.section_d8{
+	height: 400px;
+}
+.section_d8 img{
+	width: 50px;
+	float: left;
+	margin-right: 20px;
+}
+footer{
+	color: white;
+	background-color: #383939;
+	font-size: 15px;
+	height: 550px;
+	padding-top: 70px !important;
+}
+.white_socials li, .footer_menu li{margin-bottom: 10px;}
+.white_socials li a, .footer_menu li a{color: white;}
+.white_socials li a:hover, .footer_menu li a:hover{color: #9b9b9b;}
+.white_socials li{background-size: 20px;}
+.white_socials li:first-child{background-image: url('../../imgs/headers/footer_mail.1ZG6v7dM.png');}
+.white_socials li:nth-child(2){background-image: url('../../imgs/headers/footer_facebook.3FxkgKGX.png');}
+.white_socials li:nth-child(3){background-image: url('../../imgs/headers/footer_linkedin.1IXPKavd.png');}
+.white_socials li:nth-child(4){background-image: url('../../imgs/headers/footer_press.Og3KBD5o.png');}
+.white_socials li:nth-child(5){background-image: url('../../imgs/headers/footer_angellist.2MA8kYWq.png');}
+.icon-reorder::before{color: white !important;}
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+.slider.slider-horizontal{
+	width: 160px;
+}
+.slider-handle{
+	background-color: white;
+	background-image: unset;
+	border: 1px solid #bebebe;
+	width: 35px;
+}
+.slider-handle.round{
+	border-radius: 10px;
+}
+.slider.slider-horizontal .slider-track{
+	height: 3px;
+	margin-top: -2px;	
+	background-image: unset;
+	background-color: rgba(0,0,0,0.1);
+}
+.slider-selection{
+	background-color: #424242;
+	background-image: unset;
+}
+.tooltip-inner, .tooltip-arrow, .mobile_fav, .filter, .mobile_navigation, .mobile_bookbtn, .section_d2 .mobile_viewnum, .mobile_cardetailinfo{
+	display: none;
+}
+.header_fav, .topbar .search_area input, #slider .car_detailinfo, .car_slider, .viewnum, .car_slider .ddash, .topbar .search_area form, .red_leftline, .red_rightline{
+	display: block;
+}
+.w_container{
+	max-width: 1080px;
+	min-width: 260px;
+	margin: auto;
+	padding: 20px 10px;
+}
+.pop_bg{
+	width: 100%;
+	height: 100vh;
+	display: none;
+	opacity: 0.5;
+	background-color: black;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 105;
+}
+.search_area form{
+	margin-bottom: 0 !important;
+}
+.search_area .search_content{
+	width: 350px;
+}
+.search_area .red_btn, .search_content, .mobile_cardetailinfo .car_title, .mobile_cardetailinfo .carprice, .mobile_bookbtn .red_btn{
+	display: inline-block;
+}
+.select_ranges .search_content, .select_ranges .select2-container{
+	width: 100%;
+}
+.select_ranges .select2-selection__rendered{
+	padding-left: 5px !important;
+	background-image: url('../imgs/headers/arrow_black_down@2x.kjb8Drre.png');
+	background-position: right;
+}
+.car_slider .viewnum{
+	width: 260px;
+}
+#header.sticky-header #header-wrap{
+	background-color: rgba(0,0,0,0.5);
+}
+.section_s1{
+	background-image: url('../imgs/headers/sell_header@2x.1VdWa7WP.jpg');
+}
+.section_s1 h1{
+	font-size: 40px;
+	padding-top: 200px;
+	margin-bottom: 0;
+}
+.section_s2{margin-top: -250px; position: relative;}
+.year_table{
+	border: 1px solid #e3e3e3;
+	border-radius: 5px;
+	font-size: 16px;
+
+}
+.year_table>div:first-child{
+	padding: 15px;
+	border-bottom: 1px solid #e3e3e3;
+	background-color: #f7f7f8;
+}
+.year_table h5{margin-bottom: 0;}
+#hmyc{background-color: white;}
+#hmyc .owl-stage-outer, .owl-stage{height: 500px;}
+.owl-carousel.owl-drag .owl-item{border-right: 1px solid #e3e3e3;}
+.owl-carousel.owl-drag .owl-item ul{
+	height: 500px; 
+	overflow-y: auto; 
+}
+.owl-carousel.owl-drag .owl-item .year_field, .owl-carousel.owl-drag .owl-item ul{padding-left: 20px !important;}
+.oc-item .year_field{padding: 10px; border-bottom: 1px solid #e3e3e3; margin-bottom: 0; width: calc( 100% + 20px );}
+.owl-stage .owl-item:list:child .owl-item .year_fielc{width: 100% !important;}
+.oc-item ul{padding: 10px;}
+.owl-carousel .owl-nav [class*=owl-]{background-color: white !important;}
+.yactive{font-weight: 700;}
+.call_txt{
+	background-image: url('../imgs/headers/red_phone.3wSsbHCQ.png');
+	background-size: 20px;
+	background-position: left;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+	padding-top: 7px;
+	padding-left: 25px;
+	font-size: 16px;
+}
+.pointer-ball-left{
+	right: -4px;
+	background-color: #e14e4e;
+    border-radius: 50%;
+    height: 7px;
+    overflow: hidden;
+    position: absolute;
+    top: -4px;
+    width: 7px;
+}
+.pointer-ball-right{
+	left: -4px;
+	background-color: #e14e4e;
+    border-radius: 50%;
+    height: 7px;
+    overflow: hidden;
+    position: absolute;
+    top: -4px;
+    width: 7px;
+}
+.price_fld{display: inline-block; width: 66%; padding: 25px 15px; border-right: 1px solid #e3e3e3;}
+.price_val{display: inline-block; width: 32%; padding: 25px 15px;}
+.part32>div{border-bottom: 1px solid #e3e3e3;}
+.part32>div:last-child{border-bottom: 0;}
+.section_s4 p, .bot0{margin-bottom: 0;}
+.red_leftline{width: 50px; border-top: 1px solid #e14e4e; z-index: 104; top: 39px; margin-right: 5px;}
+.red_rightline{width: 50px; border-top: 1px solid #e14e4e; z-index: 104; top: 36px; margin-left: 5px;}
+.red_leftline{right: -28px;}
+.red_rightline{left: -42px;}
+.comment1{margin-top: 50px;}
+.comment2{margin-top: 125px;}
+.g_line{border-top: 1px solid #e3e3e3;}
+.or_line{margin-top: -13px;}
+.or_line span{background-color: #fafafa; padding: 10px;}
+.section_s4 .w_container{background-color: #fafafa; padding-top: 50px; height: 850px;}
+.section_s4{padding-bottom: 50px;}
+.section_s5 img{width: auto !important;}
+#sellers{width: 90%; margin: auto;}
+.large_quote{font-size: 80px; position: absolute; left: 10px; opacity: 0.1;}
+#sellers .oc-item{padding: 30px; border: 1px solid #e3e3e3; border-radius: 10px;}
+#sellers .owl-item{border-right: 0;}
+.seller_desc{height: 150px;}
+#make ul, #model ul, #trim ul, #drivetrain ul, #mileage ul{opacity: 0.2;}
+#model ul li, #trim ul li, #drivetrain ul li, #mileage ul li{display: none;}
+.section_s3 .buy_acar{min-height: 300px;}
+#header.transparent-header, #header.semi-transparent{border-bottom: 0;}
+.gray_bottomline{border-top: 1px solid #e3e3e3; width: 90px;}
+
+
+
+
+
+@media screen and (min-width: 1600px){
+	.car.col-sm-3{
+		width: 20% !important;
+	}
+}
+
+@media screen and (max-width: 1280px){
+	.red_leftline, .red_rightline{width: 40px;}
+	.red_leftline{right: -10px;}
+	.red_rightline{left: -25px;}
+	.price_fld, .price_val{padding: 25px 5px;}
+	.car.col-sm-3{
+		width: 33.3333% !important;
+	}
+	.financing_field{
+		font-size: 15px;
+	}
+	.section_d4{
+		height: 870px;
+	}
+	.section_d4 .col-md-8, .section_d4 .col-md-4{
+		height: 765px;
+	}
+	.section_d4 .col-md-4{
+		padding: 20px 20px 20px 0;
+	}
+	.inner_area > div{
+		padding: 50px 10%;
+	}
+	.section_d4 .col-md-8, .white_btn{
+		padding: 20px;
+	}
+	.w_container{
+		max-width: 900px;
+	}
+	.detail_page, .white_header{
+		width: 100%;
+	}
+	.right-sidebar{
+		display: none;
+	}
+	.car_detailinfo .pricenum, .save_price .pricenum{
+		font-size: 20px;
+	}
+	.car_detailinfo h3{
+		font-size: 15px;
+	}
+	.section_d2 > div{
+		padding-left: 5px;
+	}
+	.save_price .carprice .dol, .car_detailinfo .carprice .dol{
+		bottom: 4px;
+	}
+	
+}
+@media screen and (max-width: 991px){
+	#header.transparent-header, #header.semi-transparent{background-color: rgba(0,0,0,0.5);}
+	.price_fld, .price_val{padding: 25px 15px;}
+	.car.col-sm-3{
+		width: 50% !important;
+	}
+	.mobile_navigation li a{
+		font-size: 15px;
+	}
+	.white_header .icon-reorder:before{
+		color: #424242 !important;
+	}
+	
+	.red_socials li{
+		margin-right: 60px;
+		margin-bottom: 0;
+	}
+	.section_d4 .inner_area{
+		margin-bottom: 20px;
+	}
+	.section_d7, .section_d4, .section_d8, .section_s4 .w_container{
+		height: auto;
+	}
+	.section_d7 .col-md-8{
+		height: 600px;
+	}
+	.section_d4 .col-md-8, .section_d4 .col-md-4{
+		height: 818px;
+	}
+	.save_price_desc .red_txt{
+		font-size: 15px;
+	}
+	.save_price .carprice .dol, .car_detailinfo .carprice .dol, .ref{
+		bottom: 0;
+	}
+	.w_container{
+		max-width: 720px;
+	}
+	.section_d3 p{
+		margin-bottom: 20px;
+	}
+	.carprice .pricenum{
+		font-size: 15px;
+	}
+	.buy_acar{
+		min-height: 460px;
+	}
+	.detail_page{
+		width: 100%;
+	}
+	.section_d2{
+		height: 450px;
+	}
+	.save_price > div:first-child{
+		padding-right: 15px;
+	}
+	header .selecting_city, .comment1, .comment2{
+		margin-top: 0;
+	}
+	#logo img{
+		height: 20px;
+	}
+	#logo{
+		float: left;
+		height: auto;
+	}
+	#primary-menu-trigger{
+		top: 7px;
+		left: auto;
+		right: 0;
+		font-size: 30px;
+	}
+	.primary-menu-open #header{
+		background: black !important;
+		z-index: 200 !important;
+		height: 100vh !important;
+	}
+	.header_fav, .right-sidebar, .mileague, .white_header .navigation, .red_leftline, .red_rightline{
+		display: none;
+	}
+
+	.mobile_fav{
+		position: absolute;
+		right: 60px;
+		top: 20px;
+		width: 20px;
+		display: block;
+	}
+	#primary-menu ul li{
+		border: 0;
+	}
+	#primary-menu ul li > a, .mobile_navigation li{
+		padding: 39px 0 3px !important;
+	}
+	.section_1{
+		background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url('../../imgs/headers/leader_mobile_2.17oxKo99.jpg') no-repeat center;
+		background-size: auto 100%;
+	}
+	.primary-menu-trigger{
+		right: 30;
+	}
+	.mobile_fav{
+		right: 90px;
+	}
+}
+@media screen and (max-width: 767px){
+	#logo{
+		height: auto;
+	}
+	.left-sidebar{
+		z-index: 107;
+		top: 0 !important;
+		left: -250px;
+	}
+	.topbar .search_area form{
+		display: none;
+	}
+	.mobile_bookbtn{
+		position: fixed;
+		display: block;
+		bottom: 0;
+		background: #e14e4e;
+		width: 100%;
+		z-index: 100;
+	}
+	.mobile_bookbtn .red_btn{
+		text-align: center;
+		width: calc( 100% - 75px );
+		margin-bottom: 0;
+		padding: 22px 10px;
+	}
+	.mobile_bookbtn .favorite3{
+		border-radius: 0;
+		border-right: 1px solid white;
+	}
+	.mobile_viewnum.viewnum, .mobile_cardetailinfo{
+		display: block;
+	}
+	.mobile_viewnum.viewnum{
+		margin-left: 0;
+		text-align: center;
+	}
+	.section_d1, .gradient_background{height: 360px;}
+	.section_6 .chkbox input{
+		width: 20px !important;
+	}
+	.inputhalf{
+		width: 43%;
+	}
+	.inputhalf:first-child{
+		margin: 10px 2% 10px 5%;
+	}
+	.inputhalf:nth-child(2){
+		margin: 10px 5% 10px 2%;
+	}
+	.bookingform input:not(.red_btn){
+		line-height: 35px;
+	}
+	.destination{
+		padding: 25px 0;
+	}
+	.section_d6 input, .chkbox{
+		width: 90% !important;
+		margin: 10px 5%;
+	}
+	.section_d6{
+		width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+	.red_socials li{
+		display: block;
+		margin-bottom: 20px;
+	}
+	.details_2col{
+		height: 425px;
+	}
+	.details_2col .detail_field{
+		width: 33%;
+		float: left;
+	}
+	.details_2col .detail_text{
+		width: 66%;
+		float: left;
+	}
+	.details_1col{
+		border-bottom: 1px solid #e3e3e3;
+		margin-bottom: 30px;
+	}
+	.save_price{
+		text-align: center;
+		border-bottom: 1px solid #e3e3e3;
+	}
+	.w_container{
+		max-width: 90%;
+	}
+	.ddash{
+		margin-top: 30px;
+	}
+	.section_d4 .col-md-4{
+		padding: 35px;
+		margin-top: 50px;
+	}
+	.section_d2, .section_d3, .section_d4, .section_d7, .section_d8, footer, section, .section_d7 .col-md-8, .section_d4 .col-md-8, .section_d4 .col-md-4{
+		height: auto;
+	}
+	.section_d4 .col-md-8, .section_d4 .col-md-4{
+		padding: 0;
+		margin-top: 0;
+	}
+	.topbar, .gird_content{
+		margin-left: 0;
+		width: 100%;
+	}
+	.topbar .search_area input, #slider .car_detailinfo, .car_slider .viewnum, .car_slider .ddash{
+		display: none;
+	}
+	.mileague{
+		display: inline-block;
+	}
+	.filter{
+		display: block;
+		margin-top: 20px;
+		margin-bottom: -35px;
+	}
+	.gird_content .car, .topbar .search_area, .price_scope{
+		width: 50%;
+		float: left;
+	}
+	.mail_area{
+		width: 100%;
+		float: left;
+	}
+	
+}
+
+@media screen and (max-width: 470px){
+	.price_fld, .price_val{padding: 25px 5px;}
+	.primary-menu-trigger{
+		right: 0;
+	}
+	.mobile_fav{
+		right: 50px;
+	}
+	.help .white_btn{
+		padding: 17px;
+	}
+	.help{
+		width: 100%;
+		padding: 30px 10px;
+	}
+	.section_d7 .col-md-8, .section_d8 .col-md-6{
+		padding: 0;
+	}
+	.destination input{
+		padding-right: 25px;
+	}
+	.red_btn{
+		font-size: 13px;
+		padding: 15px 10px;
+	}
+	.inner_area > div{
+		padding: 50px 5%;
+	}
+	.details_2col{
+		height: auto;
+	}
+	.details_2col .detail_field, .details_2col .detail_text{
+		width: 100%;
+		float: none;
+	}
+	.section_d6{
+		width: 290px;
+		margin-top: -100px;
+
+	}
+	.mileague{
+		display: none;
+	}
+	.search_area .search_content{
+		width: 200px;
+	}
+	.sec_container{
+		padding: 20px;
+	}
+}
+@media screen and (max-width: 320px){
+	.car.col-sm-3{
+		width: 100% !important;
+	}
+}
